@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mim.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_showFragment"
+            app:destination="@id/showFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeMenFragment"
+        android:name="com.example.mim.HomeMenFragment"
+        android:label="HomeMenFragment" />
+    <fragment
+        android:id="@+id/homeMainFragment"
+        android:name="com.example.mim.HomeMainFragment"
+        android:label="fragment_home_main"
+        tools:layout="@layout/fragment_home_main" />
+    <fragment
+        android:id="@+id/homeWomenFragment"
+        android:name="com.example.mim.HomeWomenFragment"
+        android:label="fragment_home_women"
+        tools:layout="@layout/fragment_home_women" />
+    <fragment
+        android:id="@+id/homeKitFragment"
+        android:name="com.example.mim.HomeKitFragment"
+        android:label="fragment_home_kit"
+        tools:layout="@layout/fragment_home_kit" />
+
+    <fragment
+        android:id="@+id/showFragment"
+        android:name="com.example.mim.ShowFragment"
+        android:label="fragment_show"
+        tools:layout="@layout/fragment_show" />
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.example.mim.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content">
+        <action
+            android:id="@+id/action_contentFragment_to_commentFragment"
+            app:destination="@id/commentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.mim.CommentFragment"
+        android:label="fragment_comment"
+        tools:layout="@layout/fragment_comment" />
+</navigation>

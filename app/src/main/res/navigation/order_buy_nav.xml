@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_buy_nav"
+    app:startDestination="@id/order_Buy_Fragment">
+
+    <fragment
+        android:id="@+id/order_Buy_Fragment"
+        android:name="com.example.mim.Order_Buy_Fragment"
+        android:label="fragment_order__buy_"
+        tools:layout="@layout/fragment_order__buy_" >
+
+    </fragment>
+    <dialog
+        android:id="@+id/sheetBottomFragment"
+        android:name="com.example.mim.SheetBottomFragment"
+        android:label="fragment_sheet_bottom"
+        tools:layout="@layout/fragment_sheet_bottom" >
+    </dialog>
+
+</navigation>
